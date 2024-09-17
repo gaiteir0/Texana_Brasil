@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio de Igor Matheus, estudante de ensino médio técnico em Desenvolvimento de Sistemas">
+    <title>Portfólio de Igor Matheus</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #e0e0e0;
+        background-color: #121212;
+      }
+      .hero {
+        background: url('https://source.unsplash.com/1600x900/?technology,code') no-repeat center center;
+        background-size: cover;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+      .navbar {
+        background-color: #333;
+        border-bottom: 3px solid #222;
+      }
+      .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover {
+        color: #ddd;
+      }
+      .section-title {
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+      .card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        border-radius: 1rem; 
+        border: 1px solid #444;
+        background-color: #1e1e1e;
+        color: #fff; 
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .bg-light {
+        background-color: #1e1e1e !important; 
+      }
+      footer {
+        background-color: #333;
+        color: #ddd;
+      }
+      footer p {
+        margin: 0;
+      }
+      .form-control {
+        border-radius: 0.5rem;
+        border-color: #333;
+        background-color: #222;
+        color: #ddd;
+      }
+      .form-control::placeholder {
+        color: #aaa;
+      }
+      .btn-primary {
+        background-color: #333;
+        border-color: #222;
+      }
+      .btn-primary:hover {
+        background-color: #222;
+        border-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Igor Matheus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="container">
+          <h1 class="display-4">Igor Matheus</h1>
+          <p class="lead">Estudante de Ensino Médio Técnico em Desenvolvimento de Sistemas</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center">Sobre Mim</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="https://via.placeholder.com/600x400" alt="Igor Matheus" class="img-fluid mb-4">
+                    </div>
+                    <div class="col-md-6">
+                      <p>Olá! Meu nome é Igor Matheus, tenho 16 anos e sou estudante do Ensino Médio Técnico em Desenvolvimento de Sistemas. Tenho uma paixão por tecnologia e programação e estou sempre em busca de novos desafios e oportunidades para aprender e crescer na área de TI.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="bg-light py-5">
+        <div class="container">
+          <h2 class="section-title text-center">Habilidades</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Músico</h5>
+                  <p class="card-text">Experiência em diversos instrumentos musicais e teoria musical.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Aprendizado em Tecnologia</h5>
+                  <p class="card-text">Atualmente aprendendo sobre programação, desenvolvimento web e banco de dados.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center">Projetos</h2>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="loja.png" class="card-img-top" alt="Projeto 1">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto Texana Brasil</h5>
+                  <p class="card-text">Projeto de uma loja de vendas de texana.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-light py-5">
+        <div class="container">
+          <h2 class="section-title text-center">Contato</h2>
+          <p class="text-center">Você pode me contatar por e-mail ou através das minhas redes sociais:</p>
+          <ul class="list-unstyled text-center">
+            <li><a href="mailto:igor.matheus@gmail.com" class="btn btn-primary">igor.matheus@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/igor-matheus" class="btn btn-primary mt-2" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/igor-matheus" class="btn btn-primary mt-2" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center py-3">
+      <div class="container">
+        <p class="mb-0">&copy; 2024 Igor Matheus. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9o4F9xvF7" crossorigin="anonymous"></script>
+  </body>
+</html>
+
